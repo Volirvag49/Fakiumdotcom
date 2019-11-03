@@ -30,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\core\services\index.ts" />
     <None Remove="ClientApp\src\app\home\home.component.ts" />
     <None Remove="ClientApp\src\app\home\home.module.ts" />
     <None Remove="ClientApp\src\app\index.ts" />
@@ -40,6 +41,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\core\services\index.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="ClientApp\src\app\home\home.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\home\home.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\index.ts" />
