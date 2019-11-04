@@ -7,6 +7,7 @@ import {
     ApiService,
     JwtService,
     UserService,
+    AuthGuard
 } from './services';
 
 @NgModule({
@@ -17,7 +18,8 @@ import {
         { provide: HTTP_INTERCEPTORS, useClass: HttpTokenInterceptor, multi: true },
         ApiService,
         JwtService,
-        UserService
+        UserService,
+        AuthGuard
     ],
     declarations: []
 })

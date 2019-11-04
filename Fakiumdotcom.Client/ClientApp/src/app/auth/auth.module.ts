@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AuthComponent } from './auth.component';
 import { SharedModule } from '../shared';
 import { AuthRoutingModule } from './auth-routing.module';
+import { NoAuthGuard } from './no-auth-guard.service';
 
 @NgModule({
     imports: [
@@ -14,6 +15,7 @@ import { AuthRoutingModule } from './auth-routing.module';
         AuthComponent
     ],
     providers: [
+        NoAuthGuard
     ]
 })
 export class AuthModule { }
