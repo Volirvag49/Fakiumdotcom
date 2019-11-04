@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { HomeModule } from './home/home.module';
+import { SettingsModule } from './settings/settings.module';
+
 import {
     FooterComponent,
     HeaderComponent,
@@ -20,6 +22,7 @@ import { CoreModule } from './core/core.module';
         SharedModule,
         HomeModule,
         AuthModule,
+        SettingsModule,
         AppRoutingModule
     ],
     providers: [],
