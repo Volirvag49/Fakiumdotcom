@@ -5,7 +5,11 @@ const routes: Routes = [
     {
         path: 'settings',
         loadChildren: './settings/settings.module#SettingsModule'
-    }
+    },
+    {
+        path: 'profile',
+        loadChildren: './profile/profile.module#ProfileModule'
+    },
 ];
 
 @NgModule({

@@ -7,6 +7,7 @@ import {
     ApiService,
     JwtService,
     UserService,
+    ProfilesService,
     AuthGuard
 } from './services';
 
@@ -19,6 +20,7 @@ import {
         ApiService,
         JwtService,
         UserService,
+        ProfilesService,
         AuthGuard
     ],
     declarations: []

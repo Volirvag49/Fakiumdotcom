@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { HomeModule } from './home/home.module';
 import { SettingsModule } from './settings/settings.module';
+import { ProfileModule } from './profile/profile.module';
+
 
 import {
     FooterComponent,
@@ -23,6 +25,7 @@ import { CoreModule } from './core/core.module';
         HomeModule,
         AuthModule,
         SettingsModule,
+        ProfileModule,
         AppRoutingModule
     ],
     providers: [],
