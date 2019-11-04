@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { ListErrorsComponent } from './list-errors.component';
+import { ShowAuthedDirective } from './show-authed.directive';
 
 @NgModule({
     imports: [
@@ -15,7 +16,8 @@ import { ListErrorsComponent } from './list-errors.component';
         RouterModule
     ],
     declarations: [
-        ListErrorsComponent
+        ListErrorsComponent,
+        ShowAuthedDirective
     ],
     exports: [
         CommonModule,
@@ -23,7 +25,7 @@ import { ListErrorsComponent } from './list-errors.component';
         ReactiveFormsModule,
         HttpClientModule,
         RouterModule,
-
+        ShowAuthedDirective,
         ListErrorsComponent
     ]
 })
