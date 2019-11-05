@@ -35,6 +35,7 @@
     <None Remove="ClientApp\src\app\home\home.component.ts" />
     <None Remove="ClientApp\src\app\home\home.module.ts" />
     <None Remove="ClientApp\src\app\index.ts" />
+    <None Remove="ClientApp\src\app\shared\buttons\follow-button.component.ts" />
     <None Remove="ClientApp\src\app\shared\index.ts" />
     <None Remove="ClientApp\src\app\shared\layout\footer.component.ts" />
     <None Remove="ClientApp\src\app\shared\layout\header.component.ts" />
@@ -49,6 +50,7 @@
     <TypeScriptCompile Include="ClientApp\src\app\home\home.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\home\home.module.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\index.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\shared\buttons\follow-button.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\shared\index.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\shared\layout\footer.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\shared\layout\header.component.ts" />
