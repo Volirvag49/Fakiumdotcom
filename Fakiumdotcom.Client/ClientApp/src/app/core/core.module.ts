@@ -10,6 +10,7 @@ import {
     ProfilesService,
     ArticlesService,
     CommentsService,
+    TagsService,
     AuthGuard
 } from './services';
 
@@ -25,6 +26,7 @@ import {
         ProfilesService,
         ArticlesService,
         CommentsService,
+        TagsService,
         AuthGuard
     ],
     declarations: []

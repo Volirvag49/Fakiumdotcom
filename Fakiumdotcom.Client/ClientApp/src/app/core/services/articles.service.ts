@@ -3,7 +3,7 @@ import { HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { ApiService } from './api.service';
-import { Article } from '../models';
+import { Article, ArticleListConfig } from '../models';
 import { map } from 'rxjs/operators';
 
 @Injectable()
@@ -11,6 +11,22 @@ export class ArticlesService {
     constructor(
         private apiService: ApiService
     ) { }
+
+    query(config: ArticleListConfig): Observable<{ articles: Article[], articlesCount: number }> {
+        // Convert any filters over to Angular's URLSearchParams
+        const params = {};
+
+        Object.keys(config.filters)
+            .forEach((key) => {
+                params[key] = config.filters[key];
+            });
+
+        return this.apiService
+            .get(
+                '/articles' + ((config.type === 'feed') ? '/feed' : ''),
+                new HttpParams({ fromObject: params })
+            );
+    }
 
 
     get(slug): Observable<Article> {
