@@ -9,6 +9,7 @@ import {
     UserService,
     ProfilesService,
     ArticlesService,
+    CommentsService,
     AuthGuard
 } from './services';
 
@@ -23,6 +24,7 @@ import {
         UserService,
         ProfilesService,
         ArticlesService,
+        CommentsService,
         AuthGuard
     ],
     declarations: []
